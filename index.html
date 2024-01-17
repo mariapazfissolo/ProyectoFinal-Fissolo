@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The good stuff</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header-logo" href="./index.html">
+            <h1>THE GOOD STUFF</h1>
+        </a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="menu-link" href="#">PRODUCTS</a></li>
+                <li class="nav-item"><a class="menu-link" href="#">ABOUT US</a></li>
+                <li class="nav-item"><a class="menu-link" href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    <button id="ver-carrito-btn">Ver Carrito <i class="bi bi-cart-plus"></i></button>
+
+    <div id="overlay"></div>
+    <div id="carrito-popup">
+        <h3>Carrito de Compras</h3>
+        <ul id="carrito-list" class="items">
+            <!-- Productos de ropa seleccionados -->
+        </ul>
+        <p class="total">Total: $<span id="total">0.00</span></p>
+        <button id="cerrar-carrito-btn">Cerrar Carrito</button>
+    </div>
+    </header>
+    <main>
+        <div id="ropa" class="productos-todos">
+            <div  class="producto" data-nombre="Blazer Lino" data-precio="155990,00">
+                <img class="img1" src="./img/BLAZER-ZARA.jpg" alt="blazer">
+                <p class="titulo">BLAZER CRUZADO LINO <br>TALLE S <br>$155.990,00 ARS</p>
+                <button class="agregar-carrito-btn">Agregar al carrito</button>
+            </div>
+            <div  class="producto" data-nombre="Chaleco borreguillo" data-precio="155990,00">
+                <img class="img2" src="./img/CHALECO-ZARA.jpg" alt="chaleco">
+                <p>CHALECO BORREGUILLO <br>TALLE M<br>$155.990,00 ARS</p>
+                <button class="agregar-carrito-btn">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="Top bordado" data-precio="55900,00">
+                <img class="img3" src="./img/TOP-ZARA.jpg" alt="top negro">
+                <p>TOP BORDADO <br>TALLE M<br>$55.900,00 ARS</p>
+                <button class="agregar-carrito-btn">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="Pantalon pinzas" data-precio="67990,00">
+                <img class="img1" src="./img/PANTALON-PINZAS.jpg" alt="pantalon con pinzas">
+                <p class="titulo">PANTALÓN ANCHO PINZAS <br>TALLE L <br>$67.990,00 ARS</p>
+                <button class="agregar-carrito-btn">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="Blazer con cinturon" data-precio="155990,00">
+                <img class="img2" src="./img/BLAZER-CINTURON-ZARA.jpg" alt="blazer con cinturon">
+                <p>BLAZER CINTURÓN CON LINO <br>TALLE XL<br>$155.990,00 ARS</p>
+                <button class="agregar-carrito-btn">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-nombre="Chaleco con cinturon" data-precio="86990,00">
+                <img class="img3" src="./img/PANTALON-CON-CINTURON-ZARA.jpg" alt="pantalon con cinturon">
+                <p>PANTALÓN UTILITY CINTURÓN <br>TALLE M <br>$86.990,00 ARS</p>
+                <button class="agregar-carrito-btn">Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
