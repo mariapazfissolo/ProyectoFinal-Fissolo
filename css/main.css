@@ -53,6 +53,17 @@ button{
     margin-bottom: 1rem;
     margin-left: .2rem;
 }
+button:hover{
+    background-color: #E1DEE3;
+}
+.pagar-carrito-btn:hover{
+    border-color: green;
+    color: green;
+}
+#cerrar-carrito-btn:hover{
+    border-color: red;
+    color: red;
+}
 .total{
     padding-top: 1rem;
     padding-bottom: .3rem;
