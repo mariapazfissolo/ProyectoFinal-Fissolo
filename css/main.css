@@ -56,7 +56,7 @@ button{
 button:hover{
     background-color: #E1DEE3;
 }
-.pagar-carrito-btn:hover{
+#pagar-carrito-btn:hover{
     border-color: green;
     color: green;
 }
