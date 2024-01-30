@@ -110,6 +110,21 @@ document.getElementById('ver-carrito-btn').addEventListener('click', mostrarCarr
 // Asignar evento de click al botón "Cerrar Carrito"
 document.getElementById('cerrar-carrito-btn').addEventListener('click', cerrarCarrito);
 
+//Asignar evento de click al botón "Pagar"
+const sweetAlert = document.querySelector('#sweetAlert');
+
+sweetAlert.addEventListener('click', () => {
+
+    Swal.fire({
+    title: '¡Gracias por tu compra!',
+    text: '¡Esperamos que disfrutes de tu nuevo producto!',
+    icon: 'success',
+    confirmButtonText: 'Volver a la página principal'
+  })
+
+})
+
+
 // Asignar evento de click a todos los botones "Agregar al carrito"
 let agregarCarritoBtns = document.querySelectorAll('.agregar-carrito-btn');
 agregarCarritoBtns.forEach(function (btn) {
