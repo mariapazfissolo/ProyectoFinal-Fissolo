@@ -1,0 +1,21 @@
+[
+    {"id": "lista-productos",
+     "nombre": "Elena Flores", 
+     "articulo": "BLAZER LINO",
+     "talle": "(M)"},
+
+    { "id": "lista-productos", 
+    "nombre": "Patricia Sosa", 
+    "articulo": "PANTALÓN ANCHO PINZAS",
+    "talle": "(XL)"},
+
+    { "id": "lista-productos", 
+    "nombre": "Camila Figueroa", 
+    "articulo": "PANTALÓN UTILITY CINTURÓN",
+    "talle":"(M)"},
+
+    { "id": "lista-productos", 
+    "nombre": "Sofía Morán", 
+    "articulo": "TOP BORDADO",
+    "talle":"(S)" }
+]
