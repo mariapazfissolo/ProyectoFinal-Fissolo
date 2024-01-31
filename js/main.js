@@ -20,6 +20,14 @@ function agregarAlCarrito(boton) {
 
         // Agregar producto al carrito
         carritoRopa.push(nuevoProductoRopa);
+        
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Producto agregado al carrito",
+            showConfirmButton: false,
+            timer: 1200
+          });
 
         // Actualizar la interfaz del carrito 
         actualizarCarritoRopa();
@@ -66,30 +74,31 @@ function guardarCarrito() {
 
 // Función para actualizar la interfaz del carrito 
 function actualizarCarritoRopa() {
-    // Obtener el elemento que mostrará la lista de productos en el carrito
-    let carritoList = document.getElementById('carrito-list');
+    
+// Obtener el elemento que mostrará la lista de productos en el carrito
+let carritoList = document.getElementById('carrito-list');
 
-    // Limpiar el contenido existente en el carrito
-    carritoList.innerHTML = '';
+// Limpiar el contenido existente en el carrito
+carritoList.innerHTML = '';
 
-    // Recorrer el carritoRopa y agregar cada producto al carritoList
-    carritoRopa.forEach(function (productoRopa) {
-        let itemCarrito = document.createElement('li');
-        itemCarrito.textContent = `${productoRopa.nombre} - ${productoRopa.precio.toLocaleString('es-ES', { style: 'currency', currency: 'ARS' })}`;
+// Recorrer el carritoRopa y agregar cada producto al carritoList
+carritoRopa.forEach(function (productoRopa) {
+    let itemCarrito = document.createElement('li');
+    itemCarrito.textContent = `${productoRopa.nombre} - ${productoRopa.precio.toLocaleString('es-ES', { style: 'currency', currency: 'ARS' })}`;
 
-        // Botón para eliminar el producto del carrito
-        let btnEliminar = document.createElement('button');
-        btnEliminar.textContent = 'Eliminar';
-        btnEliminar.addEventListener('click', function () {
-            eliminarDelCarrito(carritoRopa.indexOf(productoRopa));
-        });
+// Botón para eliminar el producto del carrito
+let btnEliminar = document.createElement('button');
+btnEliminar.textContent = 'Eliminar';
+btnEliminar.addEventListener('click', function () {
+    eliminarDelCarrito(carritoRopa.indexOf(productoRopa));
+});
 
-        // Agregar el botón al elemento del carrito
-        itemCarrito.appendChild(btnEliminar);
+// Agregar el botón al elemento del carrito
+itemCarrito.appendChild(btnEliminar);
 
-        // Agregar el elemento del carrito al carritoList
-        carritoList.appendChild(itemCarrito);
-    });
+// Agregar el elemento del carrito al carritoList
+carritoList.appendChild(itemCarrito);
+});
 }
 
 // Función para mostrar la ventana emergente del carrito
@@ -110,20 +119,18 @@ document.getElementById('ver-carrito-btn').addEventListener('click', mostrarCarr
 // Asignar evento de click al botón "Cerrar Carrito"
 document.getElementById('cerrar-carrito-btn').addEventListener('click', cerrarCarrito);
 
-//Asignar evento de click al botón "Pagar"
+//Asignar evento de click al botón "Pagar" y librería Sweet Alert
 const sweetAlert = document.querySelector('#sweetAlert');
 
 sweetAlert.addEventListener('click', () => {
 
     Swal.fire({
     title: '¡Gracias por tu compra!',
-    text: '¡Esperamos que disfrutes de tu nuevo producto!',
+    text: 'Esperamos que disfrutes tu nuevo producto',
     icon: 'success',
-    confirmButtonText: 'Volver a la página principal'
-  })
-
+    confirmButtonText: 'Volver al inicio'
+  });
 })
-
 
 // Asignar evento de click a todos los botones "Agregar al carrito"
 let agregarCarritoBtns = document.querySelectorAll('.agregar-carrito-btn');

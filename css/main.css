@@ -166,3 +166,36 @@ main{
     border: 1px solid #685044;
     height: 300px;
 }
+.col{
+    font-family: monserrat;
+    font-size: 19px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    color:  #685044; 
+    border-bottom: 1px solid #685044;
+    border-top: 1px solid #685044;
+}
+.retiro{
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+#lista-productos{
+    color: #685044;
+    font-weight: 900;
+    margin-left: 2rem;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 2rem;
+    gap: 1rem; 
+    color: #685044;
+}
+.footer-icons{
+    display: flex;
+    gap: 1rem; 
+    font-size: 1.2rem;
+}
